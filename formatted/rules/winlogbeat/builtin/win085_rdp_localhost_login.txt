@@ -1,0 +1,1 @@
+"win_rdp_localhost_login": " if MAP_GET('code', event) == '4624' and MAP_GET('LogonType', MAP_GET('event_data', winlog)) == '10' and (  MAP_GET('SourceNetworkAddress', MAP_GET('event_data', winlog)) == '::1'  or  MAP_GET('SourceNetworkAddress', MAP_GET('event_data', winlog)) == '127.0.0.1' ) then true else null" 
